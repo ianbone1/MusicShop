@@ -66,4 +66,17 @@ public class ShopTest {
         shop.addStock(oboe);
         assertEquals(450.0, shop.getProfit(),0.0);
     }
+
+    @Test
+    public void canRemoveStockItem() {
+        shop.addStock(drumstick);
+        shop.addStock(sheet);
+        shop.addStock(bugle);
+        shop.addStock(piano);
+        shop.addStock(guitar);
+        shop.addStock(oboe);
+        shop.removeStock(bugle);
+        assertEquals(5, shop.stockCount());
+
+    }
 }

@@ -37,4 +37,7 @@ public class Shop{
         }
         return tally;
     }
+    public void removeStock(ISell removeMe){
+        this.stock.remove(removeMe);
+    }
 }
